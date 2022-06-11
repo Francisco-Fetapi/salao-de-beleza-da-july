@@ -18,3 +18,8 @@ body.barber_version #sidebar-wrapper {
   font-size: 14px;
   font-weight: 400;
 }
+.service-widget .post-media img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+}
