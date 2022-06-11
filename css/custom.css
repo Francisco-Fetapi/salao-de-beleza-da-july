@@ -1,0 +1,20 @@
+/** ADD YOUR AWESOME CODES HERE **/
+body.barber_version #sidebar-wrapper {
+  overflow-x: hidden;
+}
+
+.logo-sidebar img {
+  zoom: 0.5;
+}
+.logo-sidebar .nome-salao {
+  text-transform: capitalize;
+}
+.logo-sidebar .nome-salao div:first-child {
+  font-size: 19px;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+.logo-sidebar .nome-salao div:last-child {
+  font-size: 14px;
+  font-weight: 400;
+}
