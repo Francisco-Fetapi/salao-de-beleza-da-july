@@ -160,17 +160,17 @@ body.barber_version #sidebar-wrapper {
   transition: all 0.5s ease;
 }
 
-body.barber_version .contact_form {
+/* body.barber_version .contact_form {
   background-color: #111111;
   border: 0;
   border-bottom: 2px solid #1f1f1f !important;
-}
+} */
 
-body.barber_version .contact_form .form-control {
+/* body.barber_version .contact_form .form-control {
   background-color: #000;
   border: 0;
   border-bottom: 2px solid #1f1f1f !important;
-}
+} */
 
 body.barber_version .contact_form .btn {
   border: 0 !important;
