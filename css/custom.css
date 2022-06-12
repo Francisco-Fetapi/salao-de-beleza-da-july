@@ -17,7 +17,7 @@ body.barber_version .section-title h3 {
 }
 
 .logo-sidebar img {
-  zoom: 0.5;
+  zoom: 0.4;
 }
 .logo-sidebar .nome-salao {
   text-transform: capitalize;
@@ -86,7 +86,7 @@ hr.grd1 {
 }
 
 .social-up-hover .footer-social {
-  zoom: 0.8;
+  zoom: 0.9;
 }
 
 .titulo-destaque i,
@@ -185,4 +185,12 @@ hr.grd1 {
 
 .contact {
   padding: 20px 30px;
+}
+
+.dev-list div.wow {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.dev-list {
+  clear: both;
 }
