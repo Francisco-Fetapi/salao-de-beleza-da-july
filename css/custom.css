@@ -127,3 +127,12 @@ hr.grd1 {
   text-align: center;
   color: #333;
 }
+
+#testimonials {
+  padding: 0px;
+}
+#testimonials .container-fluid {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
