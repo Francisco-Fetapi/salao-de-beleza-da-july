@@ -1,7 +1,6 @@
 /** ADD YOUR AWESOME CODES HERE **/
 :root {
   /* #b80509 */
-  /* #b80509 */
   --cor-principal: #b80509;
 }
 *::selection {
@@ -202,4 +201,27 @@ hr.grd1 {
 }
 .dev-list {
   clear: both;
+}
+
+.section.nopad.cac.text-center {
+  background: #1a1a1a;
+  transition: all ease-in-out 0.15s;
+  /* margin-top: -90px; */
+}
+.section.nopad.cac.text-center:hover {
+  transform: scale(1.04);
+}
+.section.nopad.cac.text-center h3 {
+  padding: 40px 0;
+  font-size: 18px;
+}
+
+.parallax.first-section {
+  height: 70vh;
+  /* display: flex;
+  align-items: center; */
+  min-height: 400px;
+}
+.parallax.first-section .container-fluid {
+  margin-top: -70px;
 }
