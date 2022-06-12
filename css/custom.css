@@ -155,11 +155,11 @@ hr.grd1 {
 }
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: var(--cor-principal);
   float: left;
   width: 44px;
   height: 44px;
-  background: #d6e9fa;
+  background: #f9c6f3bf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +187,7 @@ hr.grd1 {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1977cc;
+  background: var(--cor-principal);
   color: #fff;
 }
 
