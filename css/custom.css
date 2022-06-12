@@ -22,7 +22,7 @@ body.barber_version #sidebar-wrapper {
   height: 400px;
 }
 .service-widget .post-media img {
-  min-width: 300px;
+  width: 95%;
   height: 100%;
   min-height: 320px;
   object-fit: cover;
