@@ -42,11 +42,6 @@ body.barber_version #sidebar-wrapper {
   margin-bottom: 30px;
   text-align: center;
 }
-.footer-distributed .footer-right {
-  /* float: none; */
-  /* display: flex;
-  justify-content: center; */
-}
 .footer-links-social ul {
   display: flex;
   justify-content: center;
@@ -62,4 +57,7 @@ body.barber_version #sidebar-wrapper {
   justify-content: center;
   align-items: center;
   border: 1px solid currentColor;
+}
+hr.grd1 {
+  border-top: none;
 }
