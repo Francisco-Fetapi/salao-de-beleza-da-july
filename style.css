@@ -1913,7 +1913,7 @@ select.mobile-device {
     color: #bcbcbc;
 } */
 
-#contact {
+#contact,.bg-body {
     background: url(images/bg.png) no-repeat center center #fff;
 }
 
