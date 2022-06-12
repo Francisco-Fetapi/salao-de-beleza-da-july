@@ -30,7 +30,7 @@ body.barber_version .navbar-nav span {
 }
 
 body.barber_version .sidebar-nav li:hover a {
-  background: #bb9d52;
+  background: #7e4576
   color: #ffffff;
 }
 
@@ -51,7 +51,7 @@ body.barber_version .nav-pills > li.active > a:focus,
 body.barber_version .nav-pills > li.active > a:hover,
 body.barber_version .icon-wrapper:hover i {
   color: #ffffff;
-  background: #bb9d52;
+  background: #7e4576
 }
 
 body.barber_version .grd1 {
@@ -81,15 +81,15 @@ body.barber_version .icon-wrapper:hover i:hover {
 body.barber_version .grd1:hover,
 body.barber_version .grd1:focus {
   color: #ffffff;
-  background: #bb9d52;
+  background: #7e4576
 }
 
 body.barber_version .cac:hover {
-  background: #bb9d52;
+  background: #7e4576
 }
 
 body.barber_version .effect-1:after {
-  box-shadow: 0 0 0 2px #bb9d52;
+  box-shadow: 0 0 0 2px #7e4576
 }
 
 body.barber_version {
@@ -117,7 +117,7 @@ body.barber_version .menuopener {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #bb9d52;
+  background-color: #7e4576
   z-index: 111;
   color: #fff !important;
   width: 50px;
@@ -177,7 +177,7 @@ body.barber_version .contact_form .btn {
 }
 
 body.barber_version .contact_form .btn.subt {
-  background: #bb9d52;
+  background: #7e4576
 }
 
 body.barber_version .section.db,

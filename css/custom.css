@@ -1,4 +1,12 @@
 /** ADD YOUR AWESOME CODES HERE **/
+:root {
+  /* #7e4576 */
+  --cor-principal: #7e4576;
+}
+*::selection {
+  background-color: var(--cor-principal);
+  color: white;
+}
 body.barber_version #sidebar-wrapper {
   overflow-x: hidden;
 }
@@ -91,7 +99,7 @@ hr.grd1 {
 
 .titulo-destaque i,
 .titulo-destaque b {
-  color: #bb9d52;
+  color: #7e4576;
 }
 
 .form-control,
