@@ -459,7 +459,7 @@ li.social-links a {
 }
 
 body.barber_version .sidebar-nav li a.active {
-  background: #7e4576;
+  background: #b80509;
   color: #ffffff;
 }
 
@@ -496,7 +496,7 @@ body.barber_version .sidebar-nav li a.active {
 }
 
 #full-width .owl-dots .owl-dot.active span {
-  background: #7e4576;
+  background: #b80509;
 }
 
 /*------------------------------------------------------------------
@@ -820,8 +820,8 @@ body.barber_version .sidebar-nav li a.active {
 .desc {
   padding: 30px;
   position: relative;
-  background: #7e4576;
-  border: 1px solid #7e4576;
+  background: #b80509;
+  border: 1px solid #b80509;
   border-radius: 10px;
 }
 
@@ -1013,7 +1013,7 @@ body.barber_version .about-tab .nav-tabs > li a:hover {
 }
 .about-tab .nav-tabs > li.active > a {
   border: none;
-  background: #7e4576;
+  background: #b80509;
   color: #ffffff;
 }
 
@@ -2115,7 +2115,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a:hover {
-  color: #7e4576;
+  color: #b80509;
 }
 
 /*------------------------------------------------------------------
@@ -2200,7 +2200,7 @@ select.mobile-device {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #7e4576;
+  background: #b80509;
   z-index: 11000;
   position: fixed;
   display: block;
@@ -2309,7 +2309,7 @@ select.mobile-device {
 }
 
 .all-page-bar .title .breadcrumb .active {
-  color: #7e4576;
+  color: #b80509;
 }
 
 body.barber_version .service-wrap:hover {
@@ -2337,24 +2337,24 @@ body.barber_version .service-wrap:hover {
     top,
     rgba(255, 255, 255, 0) 0%,
     rgba(254, 254, 253, 0) 1%,
-    #7f4677 99%,
-    #7e4586 100%
+    #111 99%,
+    #111121 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
     rgba(255, 255, 255, 0) 0%,
     rgba(254, 254, 253, 0) 1%,
-    #7f4677 99%,
-    #7e4586 100%
+    #111 99%,
+    #111121 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
     rgba(254, 254, 253, 0) 1%,
-    #7f4677 99%,
-    #7e4586 100%
+    #111 99%,
+    #111121 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#7e4576',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#b80509',GradientType=0 ); /* IE6-9 */
 }
 
 body.barber_version .dev-list .widget:hover .hover-br .social-up-hover {
@@ -2389,7 +2389,7 @@ body.barber_version
 
 .appointment-left h2 {
   font-size: 38px;
-  color: #7e4576;
+  color: #b80509;
   font-weight: 700;
 }
 

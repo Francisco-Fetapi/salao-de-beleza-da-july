@@ -1,7 +1,8 @@
 /** ADD YOUR AWESOME CODES HERE **/
 :root {
-  /* #7e4576 */
-  --cor-principal: #7e4576;
+  /* #b80509 */
+  /* #b80509 */
+  --cor-principal: #b80509;
 }
 *::selection {
   background-color: var(--cor-principal);
@@ -99,7 +100,7 @@ hr.grd1 {
 
 .titulo-destaque i,
 .titulo-destaque b {
-  color: #7e4576;
+  color: #b80509;
 }
 
 .form-control,
