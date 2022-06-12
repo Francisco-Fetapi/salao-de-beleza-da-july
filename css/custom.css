@@ -136,3 +136,53 @@ hr.grd1 {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  gap: 20px;
+}
+.contact .info i {
+  font-size: 20px;
+  color: #1977cc;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d6e9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #2c4964;
+}
+.contact .info p {
+  padding-left: 60px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #4b7dab;
+}
+/* .contact .info .email,
+.contact .info .phone {
+  margin-top: 20px;
+} */
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #1977cc;
+  color: #fff;
+}
+
+.contact {
+  padding: 20px 30px;
+}
