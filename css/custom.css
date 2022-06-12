@@ -34,3 +34,32 @@ body.barber_version #sidebar-wrapper {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.footer-distributed .footer-links {
+  margin-bottom: 20px;
+}
+.footer-distributed .footer-company-name {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.footer-distributed .footer-right {
+  /* float: none; */
+  /* display: flex;
+  justify-content: center; */
+}
+.footer-links-social ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-links-social li {
+  padding: 10px;
+}
+.footer-links-social i {
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid currentColor;
+}
