@@ -249,6 +249,10 @@ hr.grd1 {
   zoom: 0.9;
 }
 
+.nav.nav-tabs a {
+  text-transform: uppercase;
+  font-weight: 500;
+}
 .nav.nav-tabs a:hover {
   color: #111;
 }
