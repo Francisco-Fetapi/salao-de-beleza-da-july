@@ -217,15 +217,30 @@ hr.grd1 {
   padding: 40px 0;
   font-size: 18px;
 }
+@media (max-width: 940px) {
+  .section.nopad.cac.text-center strong {
+    /* font-size: 24px !important; */
+  }
+}
 
 .parallax.first-section {
   height: 70vh;
   /* display: flex;
   align-items: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   min-height: 400px;
 }
 .parallax.first-section .container-fluid {
-  margin-top: -70px;
+  margin-top: -30vh;
+}
+@media (max-width: 770px) {
+  .parallax.first-section .container-fluid {
+    margin-top: -10vh;
+  }
+}
+#full-width .owl-dots {
+  display: none;
 }
 
 .service-wrap {
