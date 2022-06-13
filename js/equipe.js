@@ -10,14 +10,13 @@ class Funcionario {
 
     Funcionario.lista.push(this);
   }
-  static listar(limite) {
+  static exibir(limite) {
     const $lista = $(".dev-list");
     let html = "";
 
     for (let [key, funcionario] of Funcionario.lista.entries()) {
       if (limite === key) {
-        console.log("break", key);
-        break; //break
+        break;
       }
       html += `
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -44,7 +43,7 @@ class Funcionario {
       </div>`;
     }
 
-    $lista.html(html);
+    $lista.prepend(html);
   }
 }
 
@@ -81,4 +80,4 @@ const vanusa = new Funcionario(
 );
 
 const limite = window.location.href.includes("equipe") ? null : 3;
-Funcionario.listar(limite);
+Funcionario.exibir(limite);
