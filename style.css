@@ -989,7 +989,7 @@ body.barber_version .sidebar-nav li a.active {
   background-color: #f4f4f4;
 }
 
-.about-tab .nav-tabs {
+/* .about-tab .nav-tabs {
   border: none;
   padding: 20px;
   display: block;
@@ -1015,7 +1015,7 @@ body.barber_version .about-tab .nav-tabs > li a:hover {
   border: none;
   background: #b80509;
   color: #ffffff;
-}
+} */
 
 .about-tab .tab-content > .tab-pane {
   padding: 20px;

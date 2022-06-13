@@ -248,3 +248,7 @@ hr.grd1 {
 .service-wrap h4 {
   zoom: 0.9;
 }
+
+.nav.nav-tabs a:hover {
+  color: #111;
+}
