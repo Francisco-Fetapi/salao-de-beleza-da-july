@@ -1,12 +1,10 @@
 class Servicos {
   static todos = [];
-  constructor(categoria, servicos) {
+  constructor(categoria) {
     this.categoria = categoria;
     this.categoria_ = categoria;
-    this.servicos = servicos || [];
   }
   adicionarServico(servico) {
-    this.servicos.push(servico);
     const _this = this;
     Servicos.todos.push({ ...servico, categoria: _this.categoria_ });
   }
@@ -86,6 +84,41 @@ manicuryPedicury.adicionarServico(new Servico("Aplicação - Mão", 1000));
 manicuryPedicury.adicionarServico(new Servico("Pintura - Pé", 500));
 manicuryPedicury.adicionarServico(new Servico("Sobrancelha - Tatuar", 500));
 manicuryPedicury.adicionarServico(new Servico("Aplicação - Cilhos", 2000));
+
+const mise = new Servicos("Mise");
+mise.adicionarServico(new Servico("Bigodinho", 2000));
+mise.adicionarServico(new Servico("Bolinho", 1200));
+mise.adicionarServico(new Servico("Tongos Com Rolos", 2000));
+mise.adicionarServico(new Servico("Mise Simples", 1000));
+mise.adicionarServico(new Servico("Mise Completa", 2000));
+mise.adicionarServico(new Servico("Mise Completa a Vapor", 2000));
+mise.adicionarServico(new Servico("Mise Simples a Vapor", 1500));
+
+const desfiliso = new Servicos("Desfiliso");
+desfiliso.adicionarServico(new Servico("TCB", 2500));
+desfiliso.adicionarServico(new Servico("Dark", 7000));
+desfiliso.adicionarServico(new Servico("Olive", 7000));
+desfiliso.adicionarServico(new Servico("Soft", 3000));
+desfiliso.adicionarServico(new Servico("ABC Olive", 3000));
+
+const puxinhosPenteados = new Servicos("Puxinhos e Penteados");
+puxinhosPenteados.adicionarServico(new Servico("Puxinho Trabalhado", 2000));
+puxinhosPenteados.adicionarServico(new Servico("Penteado Apanhados", 2000));
+puxinhosPenteados.adicionarServico(new Servico("Tongos Seco", 3000));
+puxinhosPenteados.adicionarServico(new Servico("Penteado - Noiva", 5000));
+puxinhosPenteados.adicionarServico(new Servico("Penteado - Madrinha", 5000));
+puxinhosPenteados.adicionarServico(new Servico("Fitagem", 2000));
+puxinhosPenteados.adicionarServico(new Servico("Dedolise", 2000));
+
+const aplicacoes = new Servicos("Aplicações");
+aplicacoes.adicionarServico(new Servico("Fio-Fio", 4000));
+aplicacoes.adicionarServico(new Servico("Costura", 3000));
+aplicacoes.adicionarServico(new Servico("Xoxo", 9000));
+aplicacoes.adicionarServico(new Servico("Personalizada", 10000));
+aplicacoes.adicionarServico(new Servico("Peruca", 5000));
+aplicacoes.adicionarServico(new Servico("Peruca Trança", 6000));
+aplicacoes.adicionarServico(new Servico("Aplicação Meia-Lua", 2000));
+aplicacoes.adicionarServico(new Servico("Aplicação Punho", 2000));
 
 Categorias.exibir();
 Servicos.exibir();
