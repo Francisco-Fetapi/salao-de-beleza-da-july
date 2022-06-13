@@ -186,7 +186,7 @@ body.barber_version #wrapper.toggled #sidebar-wrapper {
 body.barber_version #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px;
+  padding: 0px;
 }
 
 body.barber_version #wrapper.toggled #page-content-wrapper {
