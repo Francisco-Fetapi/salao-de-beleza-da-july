@@ -1,5 +1,5 @@
 /** ADD YOUR AWESOME CODES HERE **/
-@import url("./bootstrap3+++4.css");
+/* @import url("./bootstrap3+++4.css"); */
 :root {
   /* #b80509 */
   --cor-principal: #b80509;
@@ -281,6 +281,8 @@ hr.grd1 {
   margin: 0 auto; */
   height: 200px;
   overflow: auto;
+  border: 1px solid #ccc;
+  background-color: white;
 }
 
 .footer-distributed .footer-company-name a:hover {
@@ -291,10 +293,33 @@ hr.grd1 {
   font-size: 24px;
   animation: anima-arrow 1.5s ease-in-out forwards infinite alternate;
 }
+.arrow-down-animate2 {
+  display: block;
+  margin-top: -20px;
+  animation: anima-arrow2 1.5s ease-in-out forwards infinite alternate;
+}
 
 @keyframes anima-arrow {
   to {
     opacity: 0.1;
     transform: translateY(10px);
+  }
+}
+@keyframes anima-arrow2 {
+  to {
+    opacity: 0.1;
+    transform: translateX(10px);
+  }
+}
+
+.d-none {
+  display: none;
+}
+@media (max-width: 990px) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: inline;
   }
 }
