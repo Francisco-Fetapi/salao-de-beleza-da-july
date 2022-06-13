@@ -225,3 +225,26 @@ hr.grd1 {
 .parallax.first-section .container-fluid {
   margin-top: -70px;
 }
+
+.service-wrap {
+  position: relative;
+  cursor: default;
+}
+
+.service-wrap .lead {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 6px;
+  background-color: var(--cor-principal);
+  opacity: 0.8;
+}
+.service-wrap p:not(.lead),
+.service-wrap h4 {
+  zoom: 0.9;
+}
