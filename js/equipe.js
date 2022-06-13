@@ -4,9 +4,47 @@ class Funcionario {
     this.nome = nome;
     this.cargo = cargo;
     this.foto = foto;
-    this.descricao = descricao || "Ola Mundo";
+    this.descricao =
+      descricao ||
+      "Uma mensagem que a pessoa queira passar, uma breve descrição sobre ela mesma ou mesmo uma observação sobre suas competencias técnicas.";
 
     Funcionario.lista.push(this);
+  }
+  static listar(limite) {
+    const $lista = $(".dev-list");
+    let html = "";
+
+    for (let [key, funcionario] of Funcionario.lista.entries()) {
+      if (limite === key) {
+        console.log("break", key);
+        break; //break
+      }
+      html += `
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="widget clearfix">
+              <div class="hover-br">
+                  <div class="post-media wow fadeIn">
+                      <a href="${funcionario.foto}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" target="__blank"><i class="fa fa-eye"></i></a>
+                      <img src="${funcionario.foto}" alt="" class="img-responsive">
+                  </div>
+                  <div class="social-up-hover">
+                      <div class="footer-social">
+                          <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                          <a href="#" class="btn grd1"><i class="fa fa-google"></i></a>
+                          <a href="#" class="btn grd1"><i class="fa fa-whatsapp"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="widget-title">
+                  <h3>${funcionario.nome}</h3>
+                  <small>${funcionario.cargo}</small>
+              </div>
+              <p>${funcionario.descricao}</p>
+          </div>
+      </div>`;
+    }
+
+    $lista.html(html);
   }
 }
 
@@ -42,4 +80,5 @@ const vanusa = new Funcionario(
   "./images/func6.jpg"
 );
 
-console.log(Funcionario.lista);
+const limite = window.location.href.includes("equipe") ? null : 3;
+Funcionario.listar(limite);
