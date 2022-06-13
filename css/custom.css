@@ -285,6 +285,9 @@ hr.grd1 {
   zoom: 0.9;
 }
 
+.testimonial .lead {
+  color: #f0f0f0;
+}
 .nav.nav-tabs a {
   /* text-transform: uppercase; */
   font-weight: 500;
@@ -324,11 +327,11 @@ hr.grd1 {
 }
 .arrow-down-animate {
   padding-top: 10px;
+  display: block;
   font-size: 24px;
   animation: anima-arrow 1.5s ease-in-out forwards infinite alternate;
 }
 .arrow-down-animate2 {
-  display: block;
   margin-top: -20px;
   animation: anima-arrow2 1.5s ease-in-out forwards infinite alternate;
 }
@@ -336,7 +339,7 @@ hr.grd1 {
 @keyframes anima-arrow {
   to {
     opacity: 0.1;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
 }
 @keyframes anima-arrow2 {
