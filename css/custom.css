@@ -286,3 +286,15 @@ hr.grd1 {
 .footer-distributed .footer-company-name a:hover {
   color: #f0f0f0;
 }
+.arrow-down-animate {
+  padding-top: 10px;
+  font-size: 24px;
+  animation: anima-arrow 1.5s ease-in-out forwards infinite alternate;
+}
+
+@keyframes anima-arrow {
+  to {
+    opacity: 0.1;
+    transform: translateY(10px);
+  }
+}
