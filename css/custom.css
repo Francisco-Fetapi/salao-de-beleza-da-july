@@ -344,3 +344,9 @@ hr.grd1 {
     display: block;
   }
 }
+
+@media (max-width: 900px) {
+  .first-section h2 strong {
+    font-size: 25px !important;
+  }
+}
