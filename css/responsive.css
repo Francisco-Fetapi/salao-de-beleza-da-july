@@ -269,11 +269,11 @@
   .footer-distributed {
     padding: 30px;
     text-align: center;
-    font: bold 14px sans-serif;
+    /* font: bold 14px sans-serif; */
   }
   .footer-distributed .footer-company-name {
     margin-top: 10px;
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .footer-distributed .footer-left,
   .footer-distributed .footer-right {
@@ -426,7 +426,7 @@
     padding: 0;
   }
   .section-title p {
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 25px;
   }
   .section-title h3 {
