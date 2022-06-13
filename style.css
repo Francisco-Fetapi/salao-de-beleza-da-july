@@ -2312,10 +2312,10 @@ select.mobile-device {
   color: #b80509;
 }
 
-body.barber_version .service-wrap:hover {
+body.barber_version .service-wrap:focus {
   transform: scale(1.07);
   transition: all 1s ease-in-out;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .hover-br {

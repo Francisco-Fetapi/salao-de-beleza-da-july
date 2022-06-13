@@ -1,7 +1,9 @@
 /** ADD YOUR AWESOME CODES HERE **/
+@import url("./bootstrap3+++4.css");
 :root {
   /* #b80509 */
   --cor-principal: #b80509;
+  --cor-secundaria: #111;
 }
 *::selection {
   background-color: var(--cor-principal);
@@ -250,9 +252,33 @@ hr.grd1 {
 }
 
 .nav.nav-tabs a {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
 }
 .nav.nav-tabs a:hover {
   color: #111;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background-color: var(--cor-principal);
+}
+.all-page-bar,
+.section.nopad.cac.text-center {
+  z-index: 1;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: var(--cor-principal);
+  color: #f0f0f0;
+  border: none;
+}
+.lista-servicos {
+  /* width: 50%;
+  max-width: 300px;
+  margin: 0 auto; */
+  height: 200px;
+  overflow: auto;
 }
