@@ -161,7 +161,7 @@ hr.grd1 {
   float: left;
   width: 44px;
   height: 44px;
-  background: #f9c6f3bf;
+  background: #ffa4bfbf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,4 +281,8 @@ hr.grd1 {
   margin: 0 auto; */
   height: 200px;
   overflow: auto;
+}
+
+.footer-distributed .footer-company-name a:hover {
+  color: #f0f0f0;
 }
