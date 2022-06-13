@@ -1,17 +1,64 @@
 class Servicos {
+  static todos = [];
   constructor(categoria, servicos) {
     this.categoria = categoria;
+    this.categoria_ = categoria;
     this.servicos = servicos || [];
   }
   adicionarServico(servico) {
     this.servicos.push(servico);
+    const _this = this;
+    Servicos.todos.push({ ...servico, categoria: _this.categoria_ });
+  }
+  set categoria(valor) {
+    Categorias.nomes.push(valor);
+  }
+  static exibir() {
+    const $servicos = $(".servicos-tab");
+
+    let html = "";
+    Categorias.nomes.forEach((categoria, key) => {
+      const servicosDestaCategoria = Servicos.todos.filter(
+        (servico) => servico.categoria === categoria
+      );
+      html += `<div class="row tab-pane fade" id="tab_${key}">`;
+      for (let servico of servicosDestaCategoria) {
+        html += `<div class="col-md-6">
+          <div class="service-wrap clearfix">
+              <img src="uploads/barber_service_01.jpg" alt="" class="img-responsive img-rounded alignleft">
+              <h4>${servico.nome}</h4>
+              <p class="lead">${servico.preco}</p>
+              <p>${servico.descricao}</p>
+          </div>
+      </div>`;
+      }
+      html += `
+          </div>
+          `;
+      $servicos.append(html);
+    });
+    $('a[href="#tab_0"]').tab("show");
   }
 }
 class Servico {
   constructor(nome, preco, descricao) {
     this.nome = nome;
-    this.preco = preco;
-    this.descricao = "Ola Mundo bla bla bla";
+    this.preco = preco.toLocaleString({ minimuFractionDigitis: 2 }) + " KZ";
+    this.descricao =
+      descricao ||
+      "Algum texto descrevendo este serviço, exaltando as especificações técnicas e de estilos de modo a atrair o cliente.";
+  }
+}
+class Categorias {
+  static nomes = [];
+  static exibir() {
+    const servicos = $(".lista-servicos");
+    servicos.html("");
+    Categorias.nomes.forEach((nome, key) => {
+      servicos.append(`
+        <li><a href="#tab_${key}" data-toggle="tab">${nome}</a></li>
+        `);
+    });
   }
 }
 
@@ -39,3 +86,6 @@ manicuryPedicury.adicionarServico(new Servico("Aplicação - Mão", 1000));
 manicuryPedicury.adicionarServico(new Servico("Pintura - Pé", 500));
 manicuryPedicury.adicionarServico(new Servico("Sobrancelha - Tatuar", 500));
 manicuryPedicury.adicionarServico(new Servico("Aplicação - Cilhos", 2000));
+
+Categorias.exibir();
+Servicos.exibir();
