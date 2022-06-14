@@ -414,6 +414,9 @@ hr.grd1 {
 .all-page-bar.servicos-container {
   background-image: url("../images/banner-servicos.jpg");
 }
+.all-page-bar.pagina-horario {
+  background-image: url("../images/banner-horario.jpg");
+}
 
 .all-page-bar .title .breadcrumb .active {
   /* color: white; */
