@@ -436,6 +436,8 @@ hr.grd1 {
   /* border: 1px solid #b80509; */
   border-radius: 10px;
   zoom: 0.85;
+  height: 220px;
+  overflow: auto;
 }
 .desc + .testi-meta {
   zoom: 0.85;
