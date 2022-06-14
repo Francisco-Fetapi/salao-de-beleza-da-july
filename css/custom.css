@@ -463,3 +463,9 @@ hr.grd1 {
 .T2dutf {
   display: none;
 }
+
+.iframe-youtube {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
