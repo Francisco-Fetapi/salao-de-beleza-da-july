@@ -118,8 +118,8 @@ hr.grd1 {
   zoom: 0.9;
 }
 
-.titulo-destaque i,
-.titulo-destaque b {
+.titulo-destaque i:not(.not-styled),
+.titulo-destaque b:not(.not-styled) {
   color: #b80509;
 }
 
