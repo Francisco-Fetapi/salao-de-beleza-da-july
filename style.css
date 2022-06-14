@@ -810,21 +810,6 @@ body.barber_version .sidebar-nav li a.active {
   opacity: 0.5;
 }
 
-.desc h3 i {
-  color: #111111;
-  font-size: 37px;
-  vertical-align: middle;
-  margin-right: 12px;
-}
-
-.desc {
-  padding: 30px;
-  position: relative;
-  background: #b80509;
-  border: 1px solid #b80509;
-  border-radius: 10px;
-}
-
 .testi-meta {
   display: block;
   margin-top: 20px;

@@ -421,3 +421,22 @@ hr.grd1 {
   font-weight: bold;
   zoom: 1.1;
 }
+
+.desc h3 i {
+  color: #f0f0f0;
+  font-size: 27px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.desc {
+  padding: 30px;
+  position: relative;
+  background: var(--cor-secundaria);
+  /* border: 1px solid #b80509; */
+  border-radius: 10px;
+  zoom: 0.85;
+}
+.desc + .testi-meta {
+  zoom: 0.85;
+}
