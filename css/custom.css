@@ -386,3 +386,16 @@ hr.grd1 {
   margin-bottom: 15px;
   font-style: italic;
 }
+
+.tab-pane .testimonial h4 {
+  color: #1a1a1a;
+}
+.tab-pane .testimonial small {
+  color: #ccc;
+  zoom: 0.8;
+}
+
+.tab-pane .citacao .fa {
+  zoom: 0.8;
+  transform: translateY(-8px);
+}

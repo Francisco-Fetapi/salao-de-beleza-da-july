@@ -49,7 +49,7 @@ class Funcionario {
 
 const juliana = new Funcionario(
   "Juliana Luiz",
-  "A Fundadora",
+  "A Proprietária",
   "./images/func0.jpg"
 );
 const mateus = new Funcionario(
