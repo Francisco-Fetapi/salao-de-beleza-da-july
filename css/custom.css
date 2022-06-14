@@ -372,3 +372,17 @@ hr.grd1 {
     font-size: 25px !important;
   }
 }
+
+.about-tab .tab-pane {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-tab .tab-content > .tab-pane ul {
+  text-align: left;
+}
+.about-tab .tab-content > .tab-pane ul li {
+  display: block;
+  margin-bottom: 15px;
+  font-style: italic;
+}

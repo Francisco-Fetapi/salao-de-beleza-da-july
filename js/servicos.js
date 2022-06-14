@@ -87,7 +87,7 @@ manicuryPedicury.adicionarServico(new Servico("Aplicação - Cilhos", 2000));
 
 const mise = new Servicos("Mise");
 mise.adicionarServico(new Servico("Bigodinho", 2000));
-mise.adicionarServico(new Servico("Bolinho", 1200));
+mise.adicionarServico(new Servico("Rolinho", 1200));
 mise.adicionarServico(new Servico("Tongos Com Rolos", 2000));
 mise.adicionarServico(new Servico("Mise Simples", 1000));
 mise.adicionarServico(new Servico("Mise Completa", 2000));
