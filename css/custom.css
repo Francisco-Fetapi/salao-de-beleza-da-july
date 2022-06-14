@@ -513,3 +513,27 @@ hr.grd1 {
   float: right;
   font-size: 20px;
 }
+body.barber_version .sidebar-nav li {
+  margin-bottom: 0px;
+}
+body.barber_version .sidebar-nav li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0px;
+  color: #f0f0f0;
+  font-weight: 400;
+}
+body.barber_version .sidebar-nav li a.active {
+  pointer-events: none;
+  background: transparent;
+  border-left: 2px solid var(--cor-principal);
+}
+body.barber_version .sidebar-nav li a:hover {
+  background-color: transparent;
+  color: var(--cor-principal);
+}
+.side-top {
+  padding-left: 0;
+  padding-right: 0;
+  right: 0;
+}
