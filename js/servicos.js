@@ -82,9 +82,7 @@ class Categorias {
 }
 
 const trancas = new Servicos("Tranças");
-trancas.adicionarServico(
-  new Servico("Escama", 2000, null, "./uploads/barber_service_01.jpg")
-);
+trancas.adicionarServico(new Servico("Escama", 2000));
 trancas.adicionarServico(new Servico("Uma-Uma Simples", 2500));
 trancas.adicionarServico(new Servico("Maliamol", 2500));
 trancas.adicionarServico(new Servico("Americano", 2000));

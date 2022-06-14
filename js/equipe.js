@@ -54,7 +54,7 @@ const juliana = new Funcionario(
 );
 const mateus = new Funcionario(
   "Mateus Hamuyela",
-  "Barbeiro",
+  "Barbeiro e Gerente",
   "./images/func1.jpg"
 );
 const afonso = new Funcionario(

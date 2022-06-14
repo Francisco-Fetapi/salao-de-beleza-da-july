@@ -488,3 +488,15 @@ hr.grd1 {
 .container-fluid {
   padding: auto 10px;
 }
+
+@media (max-width: 515px) {
+  .banner-home {
+    transform: translateY(50px);
+  }
+}
+@media (max-width: 600px) {
+  .testimonial.clearfix {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
