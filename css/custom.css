@@ -504,3 +504,12 @@ hr.grd1 {
     margin-right: 10px;
   }
 }
+
+.sidebar-nav {
+  text-align: left;
+}
+
+.sidebar-nav .fa {
+  float: right;
+  font-size: 20px;
+}
