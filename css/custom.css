@@ -13,6 +13,20 @@
 body.barber_version #sidebar-wrapper {
   overflow-x: hidden;
 }
+.section.p-index,
+.section.p-equipe,
+.section.p-servicos,
+.section.p-horario,
+.section.p-sobre {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lead {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +36,8 @@ h6 {
   text-transform: uppercase !important;
   line-height: 1.25 !important;
   zoom: 0.9;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body.barber_version .section-title h3 {
   line-height: 1.25 !important;
