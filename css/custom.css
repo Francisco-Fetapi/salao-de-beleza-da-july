@@ -542,3 +542,7 @@ body.barber_version .sidebar-nav li a:hover {
   color: var(--cor-principal);
   font-weight: 500;
 }
+
+#grd1-testimonials {
+  background-color: var(--cor-principal);
+}
