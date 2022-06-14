@@ -30,7 +30,7 @@ body.barber_version .navbar-nav span {
 }
 
 body.barber_version .sidebar-nav li:hover a {
-  background: #b80509;
+  background: #e31e22;
   color: #ffffff;
 }
 
@@ -38,7 +38,7 @@ body.barber_version .lead strong,
 body.barber_version .icon-wrapper:hover a,
 body.barber_version a:hover,
 body.barber_version a:focus {
-  color: #b80509;
+  color: #e31e22;
 }
 
 /**************************************
@@ -48,7 +48,7 @@ GRADIENTS
 body.barber_version .icon_wrap:hover,
 body.barber_version .icon-wrapper:hover i {
   color: #ffffff;
-  background: #b80509;
+  background: #e31e22;
 }
 
 body.barber_version .grd1 {
@@ -73,15 +73,15 @@ body.barber_version .icon-wrapper:hover i:hover {
 body.barber_version .grd1:hover,
 body.barber_version .grd1:focus {
   color: #ffffff;
-  background: #b80509;
+  background: #e31e22;
 }
 
 body.barber_version .cac:hover {
-  background: #b80509;
+  background: #e31e22;
 }
 
 body.barber_version .effect-1:after {
-  box-shadow: 0 0 0 2px #b80509;
+  box-shadow: 0 0 0 2px #e31e22;
 }
 
 body.barber_version {
@@ -109,7 +109,7 @@ body.barber_version .menuopener {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #b80509;
+  background-color: #e31e22;
   z-index: 111;
   color: #fff !important;
   width: 50px;
@@ -169,7 +169,7 @@ body.barber_version .contact_form .btn {
 }
 
 body.barber_version .contact_form .btn.subt {
-  background: #b80509;
+  background: #e31e22;
 }
 
 body.barber_version .section.db,

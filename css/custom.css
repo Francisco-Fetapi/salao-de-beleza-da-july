@@ -5,9 +5,9 @@
   display: none;
 }
 :root {
-  /* #b80509 */
+  /* #e31e22 */
   /* #e31e22 -> Vermelho mais elegante*/
-  --cor-principal: #b80509;
+  --cor-principal: #e31e22;
   --cor-secundaria: #111;
 }
 *::selection {
@@ -155,7 +155,7 @@ hr.grd1 {
 
 .titulo-destaque i:not(.not-styled),
 .titulo-destaque b:not(.not-styled) {
-  color: #b80509;
+  color: #e31e22;
 }
 
 .form-control,
@@ -470,7 +470,7 @@ hr.grd1 {
   padding: 30px;
   position: relative;
   background: var(--cor-secundaria);
-  /* border: 1px solid #b80509; */
+  /* border: 1px solid #e31e22; */
   border-radius: 10px;
   zoom: 0.85;
   height: 220px;
@@ -536,4 +536,9 @@ body.barber_version .sidebar-nav li a:hover {
   padding-left: 0;
   padding-right: 0;
   right: 0;
+}
+.section.db h3,
+.desc .fa {
+  color: var(--cor-principal);
+  font-weight: 500;
 }
