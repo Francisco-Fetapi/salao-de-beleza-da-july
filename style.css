@@ -2400,3 +2400,16 @@ body.barber_version
 .appointment-time ul li span:last-child {
   float: right;
 }
+
+#testimonials .owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: initial;
+  top: 30%;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+#testimonials .owl-carousel .owl-nav.disabled:hover,
+.owl-carousel .owl-dots.disabled:hover {
+  opacity: 1;
+}

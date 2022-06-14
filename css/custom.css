@@ -1,5 +1,9 @@
 /** ADD YOUR AWESOME CODES HERE **/
 /* @import url("./helpers.css"); */
+.lista-demonstracao,
+.hr-demonstracao {
+  display: none;
+}
 :root {
   /* #b80509 */
   /* #e31e22 -> Vermelho mais elegante*/
