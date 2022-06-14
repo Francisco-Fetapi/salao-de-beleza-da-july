@@ -52,6 +52,20 @@ body.barber_version .section-title h3 {
   object-fit: cover;
 } */
 
+/* .service-wrap .descricao2 {
+  height: 120px;
+  overflow-y: auto;
+} */
+/* .service-wrap .descricao1 {
+  height: 200px;
+  overflow-y: auto;
+} */
+
+.service-wrap {
+  height: 240px;
+  overflow: auto;
+}
+
 .hoverbutton {
   z-index: 100;
   zoom: 0.7;

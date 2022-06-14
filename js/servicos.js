@@ -23,10 +23,30 @@ class Servicos {
       for (let servico of servicosDestaCategoria) {
         html += `<div class="col-md-6">
           <div class="service-wrap clearfix">
-              <img src="uploads/barber_service_01.jpg" alt="" class="img-responsive img-rounded alignleft">
+              ${
+                servico.foto
+                  ? `<img src="${servico.foto}" alt="" class="img-responsive img-rounded alignleft">`
+                  : ""
+              }
               <h4>${servico.nome}</h4>
+              ${
+                servico.foto
+                  ? `
               <p class="lead">${servico.preco}</p>
-              <p>${servico.descricao}</p>
+              `
+                  : `
+                <p style="font-size:19px;margin-top: -8px;margin-bottom: 10px;">${servico.preco}</p>
+              `
+              }
+              ${
+                servico.foto
+                  ? `
+              <p class="descricao1">${servico.descricao}</p>
+              `
+                  : `
+              <p class="descricao2">${servico.descricao}</p>
+              `
+              }
           </div>
       </div>`;
       }
@@ -39,12 +59,13 @@ class Servicos {
   }
 }
 class Servico {
-  constructor(nome, preco, descricao) {
+  constructor(nome, preco, descricao, foto) {
     this.nome = nome;
     this.preco = preco.toLocaleString({ minimuFractionDigitis: 2 }) + " KZ";
     this.descricao =
       descricao ||
       "Algum texto descrevendo este serviço, exaltando as especificações técnicas e de estilos de modo a atrair o cliente.";
+    this.foto = foto;
   }
 }
 class Categorias {
@@ -61,7 +82,9 @@ class Categorias {
 }
 
 const trancas = new Servicos("Tranças");
-trancas.adicionarServico(new Servico("Escama", 2000));
+trancas.adicionarServico(
+  new Servico("Escama", 2000, null, "./uploads/barber_service_01.jpg")
+);
 trancas.adicionarServico(new Servico("Uma-Uma Simples", 2500));
 trancas.adicionarServico(new Servico("Maliamol", 2500));
 trancas.adicionarServico(new Servico("Americano", 2000));
