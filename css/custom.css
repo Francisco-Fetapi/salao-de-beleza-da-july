@@ -2,6 +2,7 @@
 /* @import url("./helpers.css"); */
 :root {
   /* #b80509 */
+  /* #e31e22 -> Vermelho mais elegante*/
   --cor-principal: #b80509;
   --cor-secundaria: #111;
 }
@@ -402,4 +403,21 @@ hr.grd1 {
 .tab-pane .citacao .fa {
   zoom: 0.8;
   transform: translateY(-8px);
+}
+
+.all-page-bar.sobre-container {
+  background-image: url("../images/banner-sobre.jpg");
+}
+.all-page-bar.equipe-container {
+  background-image: url("../images/banner-equipe.jpg");
+}
+.all-page-bar.servicos-container {
+  background-image: url("../images/banner-servicos.jpg");
+}
+
+.all-page-bar .title .breadcrumb .active {
+  /* color: white; */
+  color: #e31e22;
+  font-weight: bold;
+  zoom: 1.1;
 }
