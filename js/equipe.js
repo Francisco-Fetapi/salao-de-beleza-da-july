@@ -4,12 +4,14 @@ class Funcionario {
     this.nome = nome;
     this.cargo = cargo;
     this.foto = foto;
-    this.contatos = contatos;
-    this.descricao =
-      descricao ||
-      "Uma mensagem que a pessoa queira passar, uma breve descrição sobre ela mesma ou mesmo uma observação sobre suas competencias técnicas.";
+    this.contatos = contatos || {};
+    // Uma mensagem que a pessoa queira passar, uma breve descrição sobre ela mesma ou mesmo uma observação sobre suas competencias técnicas.
+    this.descricao = descricao || "";
 
     Funcionario.lista.push(this);
+  }
+  temAlgumContato() {
+    return Object.keys(this.contatos).length !== 0;
   }
   static exibir(limite) {
     const $lista = $(".dev-list");
@@ -24,22 +26,43 @@ class Funcionario {
           <div class="widget clearfix">
               <div class="hover-br">
                   <div class="post-media wow fadeIn">
-                      <a href="${funcionario.foto}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" target="__blank"><i class="fa fa-eye"></i></a>
-                      <img src="${funcionario.foto}" alt="" class="img-responsive">
+                      <a href="${
+                        funcionario.foto
+                      }" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" target="__blank"><i class="fa fa-eye"></i></a>
+                      <img src="${
+                        funcionario.foto
+                      }" alt="" class="img-responsive">
                   </div>
+                  ${
+                    funcionario.temAlgumContato()
+                      ? `
                   <div class="social-up-hover">
                       <div class="footer-social">
-                          <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                          <a href="#" class="btn grd1"><i class="fa fa-google"></i></a>
-                          <a href="#" class="btn grd1"><i class="fa fa-whatsapp"></i></a>
+                        ${Object.values(funcionario.contatos)
+                          .map((contato) => {
+                            if (!contato.href) return null;
+                            return `<a href="${contato.href}" class="btn grd1"><i class="${contato.icon}"></i></a>`;
+                          })
+                          .filter((contato) => contato !== null)
+                          .join("")}
                       </div>
                   </div>
+                  `
+                      : ``
+                  }
+                  
               </div>
               <div class="widget-title">
                   <h3>${funcionario.nome}</h3>
                   <small>${funcionario.cargo}</small>
               </div>
+              ${
+                funcionario.descricao
+                  ? `
               <p>${funcionario.descricao}</p>
+              `
+                  : ""
+              }
           </div>
       </div>`;
     }
@@ -47,16 +70,36 @@ class Funcionario {
     $lista.prepend(html);
   }
 }
+class Contato {
+  constructor(facebook, google, whatsapp) {
+    this.facebook = {
+      icon: "fa fa-facebook",
+      href: facebook,
+    };
+    this.google = {
+      icon: "fa fa-google",
+      href: google,
+    };
+    this.whatsapp = {
+      icon: "fa fa-whatsapp",
+      href: whatsapp,
+    };
+  }
+}
 
 const juliana = new Funcionario(
   "Juliana Luís",
   "A Proprietária",
-  "./images/func0.jpg"
+  "./images/func0.jpg",
+  null,
+  new Contato("https://free.facebook.com", "https://www.gmail.com")
 );
 const mateus = new Funcionario(
   "Mateus Hamuyela",
   "Barbeiro e Gerente",
-  "./images/func1.jpg"
+  "./images/func1.jpg",
+  null,
+  new Contato("#", "#", "#")
 );
 const afonso = new Funcionario(
   "Afonso Dumbo",
