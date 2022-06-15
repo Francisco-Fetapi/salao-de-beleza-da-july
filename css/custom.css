@@ -579,3 +579,6 @@ body.barber_version .service-wrap.servico_sem_desc p:not(.descricao2) {
   font-size: 37px !important;
   font-weight: 300;
 }
+#barbers .section-title p {
+  font-size: 16px;
+}
