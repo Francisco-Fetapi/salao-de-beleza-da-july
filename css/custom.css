@@ -209,6 +209,11 @@ hr.grd1 {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 640px) {
+  .contact .info {
+    grid-template-columns: 1fr;
+  }
+}
 .contact .info i {
   font-size: 20px;
   color: var(--cor-principal);
@@ -478,6 +483,9 @@ hr.grd1 {
 }
 .desc + .testi-meta {
   zoom: 0.85;
+}
+.testi-meta small {
+  color: #cccccc9e;
 }
 
 .T2dutf {
