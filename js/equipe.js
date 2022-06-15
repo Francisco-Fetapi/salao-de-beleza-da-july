@@ -90,16 +90,12 @@ class Contato {
 const juliana = new Funcionario(
   "Juliana Luís",
   "A Proprietária",
-  "./images/func0.jpg",
-  null,
-  new Contato("https://free.facebook.com", "https://www.gmail.com")
+  "./images/func0.jpg"
 );
 const mateus = new Funcionario(
   "Mateus Hamuyela",
   "Barbeiro e Gerente",
-  "./images/func1.jpg",
-  null,
-  new Contato("#", "#", "#")
+  "./images/func1.jpg"
 );
 const afonso = new Funcionario(
   "Afonso Dumbo",
