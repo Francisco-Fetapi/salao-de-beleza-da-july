@@ -557,3 +557,18 @@ body.barber_version .sidebar-nav li a:hover {
     height: 340px;
   }
 }
+body.barber_version .service-wrap.servico_sem_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/bg.png);
+  /*  no-repeat center center #fff */
+}
+body.barber_version .service-wrap.servico_sem_desc h4 {
+  font-size: 27px;
+}
+body.barber_version .service-wrap.servico_sem_desc p:not(.descricao2) {
+  font-size: 37px !important;
+  font-weight: 300;
+}

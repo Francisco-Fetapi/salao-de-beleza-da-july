@@ -22,7 +22,9 @@ class Servicos {
       html += `<div class="row tab-pane fade" id="tab_${key}">`;
       for (let servico of servicosDestaCategoria) {
         html += `<div class="col-md-6">
-          <div class="service-wrap clearfix">
+          <div class="service-wrap clearfix ${
+            servico.descricao ? "" : "servico_sem_desc"
+          }">
               ${
                 servico.foto
                   ? `<img src="${servico.foto}" alt="" class="img-responsive img-rounded alignleft">`
@@ -62,9 +64,8 @@ class Servico {
   constructor(nome, preco, descricao, foto) {
     this.nome = nome;
     this.preco = preco.toLocaleString({ minimuFractionDigitis: 2 }) + " KZ";
-    this.descricao =
-      descricao ||
-      "Algum texto descrevendo este serviço, exaltando as especificações técnicas e de estilos de modo a atrair o cliente.";
+    // Algum texto descrevendo este serviço, exaltando as especificações técnicas e de estilos de modo a atrair o cliente.
+    this.descricao = descricao || "";
     this.foto = foto;
   }
 }
