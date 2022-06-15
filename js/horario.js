@@ -17,8 +17,10 @@ class Horario {
     };
   }
   setHorarioDoDia(nome, horario) {
-    this.lista.find((semana) => semana.nome === nome.toUpperCase()).horario =
-      horario.toUpperCase();
+    const dia = this.lista.find((semana) => semana.nome === nome.toUpperCase());
+    if (dia) {
+      dia.horario = horario.toUpperCase();
+    }
   }
   exibir() {
     const $lista = $("#horario-lista");
