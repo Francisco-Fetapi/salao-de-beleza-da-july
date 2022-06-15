@@ -48,7 +48,7 @@ class Funcionario {
 }
 
 const juliana = new Funcionario(
-  "Juliana Luiz",
+  "Juliana Luís",
   "A Proprietária",
   "./images/func0.jpg"
 );
@@ -69,7 +69,7 @@ const eduardo = new Funcionario(
 );
 const ana = new Funcionario("Ana Pena", "Cabelereira", "./images/func4.jpg");
 const maria = new Funcionario(
-  "Maria Luiz",
+  "Maria Luís",
   "Cabelereira",
   "./images/func5.jpg"
 );
