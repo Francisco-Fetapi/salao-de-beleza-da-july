@@ -1,9 +1,10 @@
 class Funcionario {
   static lista = [];
-  constructor(nome, cargo, foto, descricao) {
+  constructor(nome, cargo, foto, descricao, contatos) {
     this.nome = nome;
     this.cargo = cargo;
     this.foto = foto;
+    this.contatos = contatos;
     this.descricao =
       descricao ||
       "Uma mensagem que a pessoa queira passar, uma breve descrição sobre ela mesma ou mesmo uma observação sobre suas competencias técnicas.";
