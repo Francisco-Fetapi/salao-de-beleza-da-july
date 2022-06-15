@@ -82,7 +82,9 @@ class Contato {
     };
     this.whatsapp = {
       icon: "fa fa-whatsapp",
-      href: whatsapp,
+      href: whatsapp
+        ? `http://api.whatsapp.com/send?phone=244${whatsapp}`
+        : null,
     };
   }
 }

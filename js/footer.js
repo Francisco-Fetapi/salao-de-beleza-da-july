@@ -7,23 +7,29 @@
 */
 
 class MediaSocial {
-  constructor(facebook, google, whatsapp, instagram) {
+  constructor(facebook, google, whatsapp, instagram, telefone) {
+    this.telefone = {
+      icon: "fa fa-phone",
+      href: telefone || whatsapp ? `tel:+244 ${telefone || whatsapp}` : "",
+    };
     this.facebook = {
       icon: "fa fa-facebook",
       href: facebook,
+    };
+    this.whatsapp = {
+      icon: "fa fa-whatsapp",
+      href: whatsapp
+        ? `http://api.whatsapp.com/send?phone=244${whatsapp}`
+        : null,
     };
     this.google = {
       icon: "fa fa-google",
       href: google,
     };
-    this.whatsapp = {
-      icon: "fa fa-whatsapp",
-      href: whatsapp,
-    };
-    this.instagram = {
-      icon: "fa fa-instagram",
-      href: instagram,
-    };
+    // this.instagram = {
+    //   icon: "fa fa-instagram",
+    //   href: instagram,
+    // };
   }
   exibir() {
     const $lista = $(".footer-links-social ul");
@@ -35,5 +41,5 @@ class MediaSocial {
   }
 }
 
-const mediaSocial = new MediaSocial("#1", "#2", "#3", "#4");
+const mediaSocial = new MediaSocial("#1", "#2", "998923997", "#4");
 mediaSocial.exibir();
