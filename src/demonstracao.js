@@ -12,7 +12,9 @@ class Demonstracao {
   static exibir(limite) {
     const $lista = $(".lista-demonstracao");
     let html = "";
-    for (let [key, demo] of Demonstracao.lista.entries()) {
+    for (let cont = 0; cont < Demonstracao.lista.length; cont++) {
+      const demo = Demonstracao.lista[cont];
+      const key = cont;
       if (limite === key) break;
       html += `
         <div class="col-md-4 col-sm-6 col-xs-12">

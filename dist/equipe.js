@@ -15,8 +15,10 @@ var Funcionario = /** @class */ (function () {
     Funcionario.exibir = function (limite) {
         var $lista = $(".dev-list");
         var html = "";
-        for (var _i = 0, _a = Funcionario.lista.entries(); _i < _a.length; _i++) {
-            var _b = _a[_i], key = _b[0], funcionario = _b[1];
+        for (var cont = 0; cont < Funcionario.lista.length; cont++) {
+            var funcionario = Funcionario.lista[cont];
+            var key = cont;
+            console.log(key);
             if (limite === key) {
                 break;
             }

@@ -12,7 +12,9 @@ class Declaracao {
   static exibir() {
     const $lista = $(".declaracoes");
     let html = "";
-    for (let [key, declaracao] of Declaracao.lista.entries()) {
+    for (let cont = 0; cont < Declaracao.lista.length; cont++) {
+      const declaracao = Declaracao.lista[cont];
+      const key = cont;
       html += `
             <div class="testimonial clearfix">
                 <div class="desc">

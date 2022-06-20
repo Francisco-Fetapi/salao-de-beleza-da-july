@@ -17,7 +17,10 @@ class Funcionario {
     const $lista = $(".dev-list");
     let html = "";
 
-    for (let [key, funcionario] of Funcionario.lista.entries()) {
+    for (let cont = 0; cont < Funcionario.lista.length; cont++) {
+      const funcionario = Funcionario.lista[cont];
+      const key = cont;
+      console.log(key);
       if (limite === key) {
         break;
       }

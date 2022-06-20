@@ -11,8 +11,9 @@ var Declaracao = /** @class */ (function () {
     Declaracao.exibir = function () {
         var $lista = $(".declaracoes");
         var html = "";
-        for (var _i = 0, _a = Declaracao.lista.entries(); _i < _a.length; _i++) {
-            var _b = _a[_i], key = _b[0], declaracao = _b[1];
+        for (var cont = 0; cont < Declaracao.lista.length; cont++) {
+            var declaracao = Declaracao.lista[cont];
+            var key = cont;
             html += "\n            <div class=\"testimonial clearfix\">\n                <div class=\"desc\">\n                    <h3><i class=\"fa fa-quote-left\"></i> ".concat(declaracao.titulo, "</h3>\n                    <p class=\"lead\">").concat(declaracao.texto, "</p>\n                </div>\n                <div class=\"testi-meta\">\n                    ").concat(declaracao.usuario.foto
                 ? "<img src=\"".concat(declaracao.usuario.foto, "\" alt=\"\" class=\"img-responsive alignright\">")
                 : "", "\n                    <h4>").concat(declaracao.usuario.nome, " <small> - ").concat(declaracao.usuario.status, "</small></h4>\n                </div>\n            </div>            \n            <br />\n            ");
