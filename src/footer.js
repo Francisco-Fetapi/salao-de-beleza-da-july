@@ -7,14 +7,14 @@
 */
 
 class MediaSocial {
-  constructor(facebook, google, whatsapp, instagram, telefone) {
-    this.telefone = {
-      icon: "fa fa-phone",
-      href: telefone || whatsapp ? `tel:+244 ${telefone || whatsapp}` : "",
-    };
+  constructor(facebook, instagram, whatsapp, telefone, google) {
     this.facebook = {
       icon: "fa fa-facebook",
       href: facebook,
+    };
+    this.instagram = {
+      icon: "fa fa-instagram",
+      href: instagram,
     };
     this.whatsapp = {
       icon: "fa fa-whatsapp",
@@ -22,24 +22,30 @@ class MediaSocial {
         ? `http://api.whatsapp.com/send?phone=244${whatsapp}`
         : null,
     };
-    this.google = {
-      icon: "fa fa-google",
-      href: google,
+    this.telefone = {
+      icon: "fa fa-phone",
+      href: telefone || whatsapp ? `tel:+244 ${telefone || whatsapp}` : "",
     };
-    // this.instagram = {
-    //   icon: "fa fa-instagram",
-    //   href: instagram,
+
+    // this.google = {
+    //   icon: "fa fa-google",
+    //   href: google,
     // };
   }
   exibir() {
     const $lista = $(".footer-links-social ul");
     let html = "";
     Object.values(this).forEach((item) => {
-      html += `<li><a href="${item.href}"><i class="${item.icon}"></i></a></li>`;
+      html += `<li><a href="${item.href}" target="__blank"><i class="${item.icon}"></i></a></li>`;
     });
     $lista.html(html);
   }
 }
 
-const mediaSocial = new MediaSocial("#1", "#2", "998923997", "#4", "947911646");
+const mediaSocial = new MediaSocial(
+  "https://web.facebook.com/Sal%C3%A3o-de-Beleza-July-Otchacati-109694235121091",
+  "https://www.instagram.com/salaodebelezajulyotchacati/",
+  "947911646",
+  "947911646"
+);
 mediaSocial.exibir();
